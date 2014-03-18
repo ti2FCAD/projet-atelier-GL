@@ -286,5 +286,45 @@
 		&lt;TD&gt;Item 7&lt;/TD&gt; &lt;TD&gt;Item 8&lt;/TD&gt; &lt;TD&gt;Item 9&lt;/TD&gt;&lt;/TR&gt;
 &lt;/TABLE&gt;
 </PRE>
+
+
+<P>
+
+
+<HR>
+
+<P>
+<B><A NAME="comb3">LA COMBINAISON "ROWSPAN" ET &lt;TH&gt;</A></B>
+<P>
+
+<TABLE BORDER  bgcolor="yellow">
+	<TR><TH ROWSPAN=2>Titre 1</TH>
+
+	    <TD>Item 1</TD> <TD>Item 2</TD> <TD>Item 3</TD> <TD>Item 4</TD>
+	</TR>
+	<TR><TD>Item 5</TD> <TD>Item 6</TD> <TD>Item 7</TD> <TD>Item 8</TD>
+
+	</TR>
+	<TR><TH>Titre 2</TH>
+	    <TD>Item 9</TD> <TD>Item 10</TD> <TD>Item 3</TD> <TD>Item 11</TD>
+	</TR>
+</TABLE>
+
+<PRE>
+&lt;TABLE BORDER&gt;
+	&lt;TR&gt;&lt;TH ROWSPAN=2&gt;Titre 1&lt;/TH&gt;
+	    &lt;TD&gt;Item 1&lt;/TD&gt; &lt;TD&gt;Item 2&lt;/TD&gt; &lt;TD&gt;Item 3&lt;/TD&gt; &lt;TD&gt;Item 4&lt;/TD&gt;
+
+	&lt;/TR&gt;
+	&lt;TR&gt;&lt;TD&gt;Item 5&lt;/TD&gt; &lt;TD&gt;Item 6&lt;/TD&gt; &lt;TD&gt;Item 7&lt;/TD&gt; &lt;TD&gt;Item 8&lt;/TD&gt;
+
+	&lt;/TR&gt;
+	&lt;TR&gt;&lt;TH&gt;Titre 2&lt;/TH&gt;
+	    &lt;TD&gt;Item 9&lt;/TD&gt; &lt;TD&gt;Item 10&lt;/TD&gt; &lt;TD&gt;Item 3&lt;/TD&gt; &lt;TD&gt;Item 11&lt;/TD&gt;
+
+	&lt;/TR&gt;
+&lt;/TABLE&gt;
+</PRE>
+
 </body>
 </html>
