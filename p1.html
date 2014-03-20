@@ -1,72 +1,105 @@
-<<<<<<< HEAD
-index.html
-=======
+
 <html>
-<head><title> Les tableaux</title></head>
+<head><title> les balises fondamentaux</title></head>
 <body>
-<h2>Comment inserer les tableaux? </h2>
-<HR SIZE=4><P><B><A NAME="tab">UN TABLEAU CLASSIQUE DE  3X2</A></B>
+<h2>les balises fondamentaux </h2>
+
+<HR>
+<H2><A NAME="s5">5. Les principales balises</A></H2>
 
 <P>
+<P>Passons, &agrave; pr&eacute;sent, au contenu du document.
+<P>
+<H2><A NAME="ss5.1">5.1 La mise en page</A>
+</H2>
 
-<TABLE BORDER bgcolor="yellow">
-	<TR>
-		<TD>A</TD> <TD>B</TD> <TD>C</TD>
-	</TR>
-	<TR>
-		<TD>D</TD> <TD>E</TD> <TD>F</TD>
+<P>La mise en page regroupe tout ce qui sert &agrave; formater le document. &Agrave;
+savoir les sauts &agrave; la ligne, les paragraphes, etc.
+<P>
+<P>
+<UL>
+<LI><CODE>&lt;BR&gt;</CODE>&nbsp;:
 
-	</TR>
-</TABLE>
+<P>Cette balise ponctuelle (on a pas besoin de la fermer) sert &agrave; forcer le
+saut &agrave; la ligne (<CODE>BReak</CODE>). La plupart des moteur de rendu HTML
+ajustent la longueur des lignes en fonction de la largeur de la fen&ecirc;tre
+dans laquelle on visualise la page HTML. Mais il arrive parfois que l'on
+veuille forcer un saut de ligne.
+<P>
+</LI>
+<LI><CODE>&lt;P&gt;</CODE>&nbsp;:
 
-<PRE>
-&lt;TABLE BORDER&gt;
-	&lt;TR&gt;
-		&lt;TD&gt;A&lt;/TD&gt; &lt;TD&gt;B&lt;/TD&gt; &lt;TD&gt;C&lt;/TD&gt;
+<P>Cette balise sert &agrave; notifier un d&eacute;but de paragraphe
+(<CODE>Paragraph</CODE>). On peut y pr&eacute;ciser le param&egrave;tre
+<CODE>align&nbsp;=&nbsp;left|center|right|justify</CODE> qui permet,
+respectivement, de positionner le paragraphe align&eacute; &agrave; gauche, centr&eacute;,
+align&eacute; &agrave; droite ou justifi&eacute;.
+<P>
+</LI>
+<LI><CODE>&lt;H1&gt;</CODE> &agrave; <CODE>&lt;H6&gt;</CODE>&nbsp;:
 
-	&lt;/TR&gt;
-	&lt;TR&gt;
-		&lt;TD&gt;D&lt;/TD&gt; &lt;TD&gt;E&lt;/TD&gt; &lt;TD&gt;F&lt;/TD&gt;
+<P>Ces balises permettent de faire appara&icirc;tre une certaine hi&eacute;rarchie dans
+les titres de documents. Le <CODE>H1</CODE> sert aux gros titres, le
+<CODE>H3</CODE> est la taille de la police standard et le <CODE>H6</CODE> est la
+plus petite. On peut y pr&eacute;ciser le param&egrave;tre <CODE>align</CODE>.
+<P>
+</LI>
+<LI><CODE>&lt;HR&gt;</CODE>&nbsp;:
 
-	&lt;/TR&gt;
-&lt;/TABLE&gt;
-</PRE>
-
+<P>Cette balise ponctuelle permet d'afficher une ligne de s&eacute;paration
+(<CODE>Horizontal Rule</CODE>). On peut fixer les param&egrave;tres :
+<UL>
+<LI><CODE>align = left|center|right</CODE>&nbsp; Permet d'aligner la ligne 
+de s&eacute;paration &agrave; gauche, au centre ou &agrave; droite.</LI>
+<LI><CODE>noshade</CODE>&nbsp;: Est un param&egrave;tre bool&eacute;en qui enl&egrave;ve
+l'ombrage de la barre s'il est pr&eacute;sent.</LI>
+<LI><CODE>size</CODE>&nbsp;: Ajuste la taille de la ligne de s&eacute;paration.
+On peut avoir deux unit&eacute;s de mesure. L'une absolue, en <EM>pixel</EM>,
+il suffit de ne mettre qu'un chiffre (<CODE>size="49"</CODE>). L'autre
+relative &agrave; la largeur de la fen&ecirc;tre du navigateur qui visualise la page,
+en <EM>pourcent</EM> (<CODE>size="50%"</CODE>).</LI>
+<LI><CODE>width</CODE>&nbsp;: Ajuste la hauteur de la ligne de s&eacute;paration.
+On peut aussi utiliser des pixels ou des pourcentages.</LI>
+</UL>
+<P>Quelques exemples de barre de s&eacute;paration :
 <P>
 <HR>
-
-<P>
-<A NAME="deux"><B>DEUX EXEMPLES DE L'ATTRIBUT "ROWSPAN"</b></A> 
-(hauteur d'une cellule exprim&eacute;e en nombre de lignes)
-
-</DL>
-<P>
-
-<TABLE BORDER bgcolor="yellow">
-	<TR>
-		<TD>Item 1</TD>
-		<TD ROWSPAN=2>Item 2</TD>
-		<TD>Item 3</TD>
-	</TR>
-
-	<TR>
-		<TD>Item 4</TD> <TD>Item 5</TD>
-	</TR>
-</TABLE>
 <PRE>
-&lt;TABLE BORDER&gt;
-	&lt;TR&gt;
-		&lt;TD&gt;Item 1&lt;/TD&gt;
 
-		&lt;TD ROWSPAN=2&gt;Item 2&lt;/TD&gt;
-		&lt;TD&gt;Item 3&lt;/TD&gt;
-	&lt;/TR&gt;
-	&lt;TR&gt;
-		&lt;TD&gt;Item 4&lt;/TD&gt; &lt;TD&gt;Item 5&lt;/TD&gt;
-
-	&lt;/TR&gt;
-&lt;/TABLE&gt;
+    &lt;HR width="50" align="center"&gt;
+    &lt;HR size="5" width="50%" align="center"&gt;
+    &lt;HR noshade size="5" width="50%" align="center"&gt;
 </PRE>
+<HR>
+</LI>
+</UL>
+<P>
+<H2><A NAME="ss5.2">5.2 Les styles</A>
+</H2>
+
+<P>Le style est ce qui permet de faire ressortir certains mots du texte, en 
+le mettant en <I>italique</I> ou bien en <B>gras</B> par exemple.
+<P>
+<P>
+<UL>
+<LI><CODE>&lt;EM&gt;</CODE>&nbsp;: Est la balise qui permet de mettre en
+<EM>valeur</EM> une partie du texte (<CODE>EMphase</CODE>),</LI>
+<LI><CODE>&lt;B&gt;</CODE>&nbsp;: Permet de mettre une partie du texte en
+<B>gras</B> (<CODE>Bold</CODE>),</LI>
+<LI><CODE>&lt;IT&gt;</CODE>&nbsp;: <I>Italique</I>,</LI>
+<LI><CODE>&lt;TT&gt;</CODE>&nbsp;: Permet d'&eacute;crire en caract&egrave;res
+<CODE>machine &agrave; &eacute;crire</CODE> (<CODE>Typewriter Text</CODE>),</LI>
+<LI><CODE>&lt;STRIKE&gt;</CODE>&nbsp;: Caract&egrave;res barr&eacute;s,</LI>
+<LI><CODE>&lt;BLINK&gt;</CODE>&nbsp;: Permet de faire clignoter la partie
+du texte concern&eacute;e,</LI>
+<LI><CODE>&lt;BIG&gt;</CODE>&nbsp;: &Eacute;cris en grand,</LI>
+<LI><CODE>&lt;SMALL&gt;</CODE>&nbsp;: &Eacute;cris en petit,</LI>
+<LI><CODE>&lt;Q&gt;</CODE>&nbsp;: Citation (<CODE>Quotation</CODE>),</LI>
+<LI><CODE>&lt;SUP&gt;</CODE>&nbsp;: Exposant,</LI>
+<LI><CODE>&lt;SUB&gt;</CODE>&nbsp;: Indice,</LI>
+<LI><CODE>&lt;FONT size="+1"&gt;</CODE>&nbsp;: Agrandit ou r&eacute;duit le texte 
+concern&eacute;.</LI>
+</UL>
+
 </body>
 </html>
->>>>>>> 67fa5060418c2ac379d571754c0133c10d5f9acd
