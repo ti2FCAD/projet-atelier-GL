@@ -10,10 +10,9 @@ function afficher2() {
 var var2 ="<TABLE BORDER bgcolor=\"green\">\n<TR>\n<TD>Item 1</TD><TD>ROWSPAN=2>Item 2</TD><TD>Item 3</TD>\n</TR>\n<TR>\n<TD>Item 4</TD><TD>Item 5</TD>\n</TR>\n</TABLE>";
 alert(var2);
 }
-/*
+
 function afficher3() {
-var var3 ="<TABLE BORDER bgcolor=\"red\"><TR><TD ROWSPAN=2>Item 1</TD><TD>Item 2</TD><TD>Item 3</TD><TD>Item 4</TD></TR><TR><TD>Item 5</TD><TD>Item 6</TD><TD>Item 7</TD></TR>
-</TABLE>";
+var var3 ="<TABLE BORDER bgcolor=\"red\"><TR><TD ROWSPAN=2>Item 1</TD><TD>Item 2</TD><TD>Item 3</TD><TD>Item 4</TD></TR><TR><TD>Item 5</TD><TD>Item 6</TD><TD>Item 7</TD></TR></TABLE>";
 alert(var3);
 }
 
@@ -28,11 +27,17 @@ alert(var5);
 }
 
 function afficher6() {
-var var6 ="<TABLE BORDER  bgcolor=\"yellow\">\n<TR>\n<TH COLSPAN=2>Titre 1</TH><TH COLSPAN=2>Titre 2</TH>\n</TR>\n<TR>\n<TD>A</TD><TD>B</TD><TD>C</TD> <TD>D</TD>\n</TR>\n<TR><TD>E</TD> <TD>F</TD> <TD>G</TD><TD>H</TD>\n</TR>
-</TABLE>";
+var var6 ="<TABLE BORDER  bgcolor=\"yellow\">\n<TR>\n<TH COLSPAN=2>Titre 1</TH><TH COLSPAN=2>Titre 2</TH>\n</TR>\n<TR>\n<TD>A</TD><TD>B</TD><TD>C</TD> <TD>D</TD>\n</TR>\n<TR><TD>E</TD> <TD>F</TD> <TD>G</TD><TD>H</TD>\n</TR></TABLE>";
 alert(var6);
 }
-*/
+
+function afficher7() {
+var var7 ="<TABLE BORDER  bgcolor=\"yellow\"><TR><TH COLSPAN=2>Titre 1</TH><TH COLSPAN=2>Titre 2</TH></TR><TR><TH>Titre  3</TH> <TH>Titre  4</TH><TH>Titre  5</TH> <TH>Titre  6</TH></TR><TR><TD>A</TD> <TD>B</TD> <TD>C</TD> <TD>D</TD></TR><TR><TD>E</TD> <TD>F</TD><TD>G</TD> <TD>H</TD></TR></TABLE>";
+alert(var7);
+}
+
+
+
 </SCRIPT>
 
 
@@ -216,7 +221,8 @@ alert(var6);
 
 </TABLE>
 <PRE>
-
+<form name ="form7">
+<input type="button" name="btn7" value="afficher script" onClick="afficher7()">
 
 </PRE>
 
