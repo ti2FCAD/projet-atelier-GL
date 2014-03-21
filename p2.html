@@ -1,7 +1,50 @@
 <html>
-<head><title> Les tableaux</title></head>
+<head>
+<SCRIPT LANGUAGE="javascript">
+function afficher() {
+var var1 ="<TABLE BORDER bgcolor=\"yellow\">\n<TR>\n<TD>A</TD><TD>B</TD><TD>C</TD>\n</TR>\n<TR>\n<TD>D</TD><TD>E</TD><TD>F</TD>\n</TR>\n</TABLE>";
+alert(var1);
+}
+
+function afficher2() {
+var var2 ="<TABLE BORDER bgcolor=\"green\">\n<TR>\n<TD>Item 1</TD><TD>ROWSPAN=2>Item 2</TD><TD>Item 3</TD>\n</TR>\n<TR>\n<TD>Item 4</TD><TD>Item 5</TD>\n</TR>\n</TABLE>";
+alert(var2);
+}
+
+function afficher3() {
+var var3 ="<TABLE BORDER bgcolor=\"red\"><TR><TD ROWSPAN=2>Item 1</TD><TD>Item 2</TD><TD>Item 3</TD><TD>Item 4</TD></TR><TR><TD>Item 5</TD><TD>Item 6</TD><TD>Item 7</TD></TR></TABLE>";
+alert(var3);
+}
+
+function afficher4() {
+var var4 ="<TABLE BORDER  bgcolor=\"yellow\"><TR><TD>Item 1</TD><TD COLSPAN=2>Item 2</TD></TR><TR><TD>Item 3</TD> <TD>Item 4</TD> <TD>Item 5</TD></TR></TABLE>";
+alert(var4);
+}
+
+function afficher5() {
+var var5 ="<TABLE BORDER  bgcolor=\"yellow\"><TR><TH>Titre 1</TH> <TH>Titre 2</TH> <TH>Titre 3</TH></TR><TR><TD>A</TD> <TD>B</TD> <TD>C</TD></TR><TR><TD>D</TD> <TD>E</TD> <TD>F</TD></TR></TABLE>";
+alert(var5);
+}
+
+function afficher6() {
+var var6 ="<TABLE BORDER  bgcolor=\"yellow\">\n<TR>\n<TH COLSPAN=2>Titre 1</TH><TH COLSPAN=2>Titre 2</TH>\n</TR>\n<TR>\n<TD>A</TD><TD>B</TD><TD>C</TD> <TD>D</TD>\n</TR>\n<TR><TD>E</TD> <TD>F</TD> <TD>G</TD><TD>H</TD>\n</TR></TABLE>";
+alert(var6);
+}
+
+function afficher7() {
+var var7 ="<TABLE BORDER  bgcolor=\"yellow\"><TR><TH COLSPAN=2>Titre 1</TH><TH COLSPAN=2>Titre 2</TH></TR><TR><TH>Titre  3</TH> <TH>Titre  4</TH><TH>Titre  5</TH> <TH>Titre  6</TH></TR><TR><TD>A</TD> <TD>B</TD> <TD>C</TD> <TD>D</TD></TR><TR><TD>E</TD> <TD>F</TD><TD>G</TD> <TD>H</TD></TR></TABLE>";
+alert(var7);
+}
+
+
+
+</SCRIPT>
+
+
+<title> Les tableaux</title></head>
 <body>
 <h2>Comment inserer les tableaux? </h2>
+
 <HR SIZE=4><P><B><A NAME="tab">UN TABLEAU CLASSIQUE DE  3X2</A></B>
 
 <P>
@@ -17,16 +60,11 @@
 </TABLE>
 
 <PRE>
-&lt;TABLE BORDER&gt;
-	&lt;TR&gt;
-		&lt;TD&gt;A&lt;/TD&gt; &lt;TD&gt;B&lt;/TD&gt; &lt;TD&gt;C&lt;/TD&gt;
 
-	&lt;/TR&gt;
-	&lt;TR&gt;
-		&lt;TD&gt;D&lt;/TD&gt; &lt;TD&gt;E&lt;/TD&gt; &lt;TD&gt;F&lt;/TD&gt;
+<form name ="form1">
+<input type="button" name="btn1" value="afficher script" onClick="afficher()">
 
-	&lt;/TR&gt;
-&lt;/TABLE&gt;
+</form>
 </PRE>
 
 <P>
@@ -39,7 +77,7 @@
 </DL>
 <P>
 
-<TABLE BORDER bgcolor="yellow">
+<TABLE BORDER bgcolor="green">
 	<TR>
 		<TD>Item 1</TD>
 		<TD ROWSPAN=2>Item 2</TD>
@@ -51,22 +89,13 @@
 	</TR>
 </TABLE>
 <PRE>
-&lt;TABLE BORDER&gt;
-	&lt;TR&gt;
-		&lt;TD&gt;Item 1&lt;/TD&gt;
+<form name ="form2">
+<input type="button" name="btn2" value="afficher script" onClick="afficher2()">
 
-		&lt;TD ROWSPAN=2&gt;Item 2&lt;/TD&gt;
-		&lt;TD&gt;Item 3&lt;/TD&gt;
-	&lt;/TR&gt;
-	&lt;TR&gt;
-		&lt;TD&gt;Item 4&lt;/TD&gt; &lt;TD&gt;Item 5&lt;/TD&gt;
-
-	&lt;/TR&gt;
-&lt;/TABLE&gt;
 </PRE>
 
 <P>
-<TABLE BORDER bgcolor="yellow">
+<TABLE BORDER bgcolor="red">
 	<TR>
 		<TD ROWSPAN=2>Item 1</TD>
 	    	<TD>Item 2</TD> <TD>Item 3</TD> <TD>Item 4</TD>
@@ -77,18 +106,9 @@
 	</TR>
 </TABLE>
 <PRE>
-&lt;TABLE BORDER&gt;
 
-	&lt;TR&gt;
-		&lt;TD ROWSPAN=2&gt;Item 1&lt;/TD&gt;
-	    	&lt;TD&gt;Item 2&lt;/TD&gt; &lt;TD&gt;Item 3&lt;/TD&gt; &lt;TD&gt;Item 4&lt;/TD&gt;
-
-	&lt;/TR&gt;
-	&lt;TR&gt;
-		&lt;TD&gt;Item 5&lt;/TD&gt; &lt;TD&gt;Item 6&lt;/TD&gt; &lt;TD&gt;Item 7&lt;/TD&gt;
-
-	&lt;/TR&gt;
-&lt;/TABLE&gt;
+<form name ="form3">
+<input type="button" name="btn3" value="afficher script" onClick="afficher3()">
 </PRE>
 <P>
 
@@ -112,17 +132,9 @@
 	</TR>
 </TABLE>
 <PRE>
-&lt;TABLE BORDER&gt;
-	&lt;TR&gt;
-		&lt;TD&gt;Item 1&lt;/TD&gt;
 
-		&lt;TD COLSPAN=2&gt;Item 2&lt;/TD&gt;
-	&lt;/TR&gt;
-	&lt;TR&gt;
-		&lt;TD&gt;Item 3&lt;/TD&gt; &lt;TD&gt;Item 4&lt;/TD&gt; &lt;TD&gt;Item 5&lt;/TD&gt;
-
-	&lt;/TR&gt;
-&lt;/TABLE&gt;
+<form name ="form4">
+<input type="button" name="btn4" value="afficher script" onClick="afficher4()">
 </PRE>
 
 
@@ -146,21 +158,10 @@
 	</TR>
 </TABLE>	
 <PRE>
-&lt;TABLE BORDER&gt;
 
-	&lt;TR&gt;
-		&lt;TH&gt;Titre 1&lt;/TH&gt; &lt;TH&gt;Titre 2&lt;/TH&gt; &lt;TH&gt;Titre 3&lt;/TH&gt;
-	&lt;/TR&gt;
 
-	&lt;TR&gt;
-		&lt;TD&gt;A&lt;/TD&gt; &lt;TD&gt;B&lt;/TD&gt; &lt;TD&gt;C&lt;/TD&gt;
-	&lt;/TR&gt;
-
-	&lt;TR&gt;
-		&lt;TD&gt;D&lt;/TD&gt; &lt;TD&gt;E&lt;/TD&gt; &lt;TD&gt;F&lt;/TD&gt;
-	&lt;/TR&gt;
-
-&lt;/TABLE&gt;	
+<form name ="form5">
+<input type="button" name="btn5" value="afficher script" onClick="afficher5()">
 </PRE>
 
 <P>
@@ -187,21 +188,8 @@
 	</TR>
 </TABLE>
 <PRE>
-&lt;TABLE BORDER&gt;
-	&lt;TR&gt;
-
-		&lt;TH COLSPAN=2&gt;Titre 1&lt;/TH&gt;
-	    	&lt;TH COLSPAN=2&gt;Titre 2&lt;/TH&gt;
-	&lt;/TR&gt;
-	&lt;TR&gt;
-		&lt;TD&gt;A&lt;/TD&gt; &lt;TD&gt;B&lt;/TD&gt; &lt;TD&gt;C&lt;/TD&gt; &lt;TD&gt;D&lt;/TD&gt; 
-	&lt;/TR&gt;
-
-	&lt;TR&gt;	
-		&lt;TD&gt;E&lt;/TD&gt; &lt;TD&gt;F&lt;/TD&gt; &lt;TD&gt;G&lt;/TD&gt; &lt;TD&gt;H&lt;/TD&gt; 
-	&lt;/TR&gt;
-
-&lt;/TABLE&gt;
+<form name ="form6">
+<input type="button" name="btn6" value="afficher script" onClick="afficher6()">
 </PRE>
 
 <P>
@@ -233,26 +221,8 @@
 
 </TABLE>
 <PRE>
-&lt;TABLE BORDER&gt;
-	&lt;TR&gt;
-		&lt;TH COLSPAN=2&gt;Titre 1&lt;/TH&gt;
-		&lt;TH COLSPAN=2&gt;Titre 2&lt;/TH&gt;
-
-	&lt;/TR&gt;
-	&lt;TR&gt;
-		&lt;TH&gt;Titre  3&lt;/TH&gt; &lt;TH&gt;Titre  4&lt;/TH&gt; 
-		&lt;TH&gt;Titre  5&lt;/TH&gt; &lt;TH&gt;Titre  6&lt;/TH&gt; 
-	&lt;/TR&gt;
-
-	&lt;TR&gt;
-		&lt;TD&gt;A&lt;/TD&gt; &lt;TD&gt;B&lt;/TD&gt; &lt;TD&gt;C&lt;/TD&gt; &lt;TD&gt;D&lt;/TD&gt; 
-	&lt;/TR&gt;
-
-	&lt;TR&gt;
-		&lt;TD&gt;E&lt;/TD&gt; &lt;TD&gt;F&lt;/TD&gt; &lt;TD&gt;G&lt;/TD&gt; &lt;TD&gt;H&lt;/TD&gt; 
-	&lt;/TR&gt;
-
-&lt;/TABLE&gt;
+<form name ="form7">
+<input type="button" name="btn7" value="afficher script" onClick="afficher7()">
 
 </PRE>
 
